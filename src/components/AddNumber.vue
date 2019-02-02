@@ -10,7 +10,7 @@
 
     methods: {
       add() {
-        this.$store.commit('addNumber', {
+        this.$store.dispatch('fetchNumbers', {
           min: 1,
           max: 100,
         });
