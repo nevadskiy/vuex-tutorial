@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <numbers></numbers>
+    <sum></sum>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Sum from './components/Sum.vue';
+import Numbers from './components/Numbers.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    'sum': Sum,
+    'numbers': Numbers,
   }
 }
 </script>
